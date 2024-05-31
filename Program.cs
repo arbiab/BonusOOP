@@ -1,32 +1,11 @@
 ﻿using System;
 using System.Xml.Linq;
 class ArrayMin
-{
-    public static int Min(int len)
-    {
-        int[] vlerat = new int[len];
-        for (int i = 0; i < len; i++)
-        {
-            Console.WriteLine("Sheno Vleren e " + Convert.ToString(i + 1) + ": ");
-            vlerat[i] = Convert.ToInt32(Console.ReadLine());
-
-        }
-        Console.WriteLine("Vlera me e vogel eshte: " + Convert.ToString(vlerat.Min()));
-        return vlerat.Min();
-    }
-}
 
 class Program
 {
     static void Main(String[] args)
     {
-        Console.Write("Sheno Gjatesin e Array: ");
-        int a = Convert.ToInt32(Console.ReadLine());
-        ArrayMin.Min(a);
-        Thread.Sleep(3000);
-        Console.WriteLine("");
-        Console.WriteLine("");
-        Console.WriteLine("");
         Zhvillues zhvillues = new Zhvillues(1, "Agim Krasniqi", "Zhvillues", 55500);
         Menaxher menaxher = new Menaxher(2, "Ahmet Shala", "Menaxher", 700000);
         Admin admin = new Admin(3, "Blerim Gashi", "Admin", 80000);
